@@ -1,0 +1,36 @@
+{
+  "name": "emedia/api",
+  "description": "API and custom response helpers for Laravel 5",
+  "type": "package",
+  "require": {
+    "php": "^7.1",
+    "illuminate/support": "^5.7",
+    "illuminate/database": "^5.7",
+    "illuminate/http": "^5.7"
+  },
+  "license": "private",
+  "authors": [
+    {
+      "name": "Shane Perera",
+      "email": "shane@elegantmedia.com.au"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "EMedia\\Api\\": "src/"
+    },
+    "files": [
+      "IDEAutoComplete.php",
+      "src/helpers.php"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "EMedia\\Api\\ApiServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
